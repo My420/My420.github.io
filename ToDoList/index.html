@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDoList</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ToDoList — веб-сервис для управления задачами.">
+  <meta name="keywords" content="todolist, список дел, список задач, управление задачами">
+  <meta name="author" content="Klinovitsky Aleksey">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="main-page">
+
+  <div class="page-header__wrapper container">
+    <header class="page-header">
+
+      <h1 class="page-header__title">ToDoList</h1>
+
+      <section class="page-header__input input">
+        <h3 class="visually-hidden">Поле ввода</h3>
+        <label class="visually-hidden" for="text-input">Введите задачу</label>
+        <input  class="input__field" id="text-input" type="text" placeholder="What needs to be done?">
+      </section>
+
+      <button class="page-header__button"><span class="visually-hidden">Контакты</span>&#105;</button>
+
+    </header>
+  </div>
+
+  <main class="app">
+
+    <h2 class="visually-hidden">Приложение</h2>
+
+    <section class="app__task-list tasks">
+      <h3 class="visually-hidden">Задачи</h3>
+      <ul class="tasks__list">
+      </ul>
+    </section>
+
+    <section class="app__controls controls">
+      <h3 class="visually-hidden">Управление</h3>
+      <section class="controls__delete">
+        <h4 class="visually-hidden">Удаление</h4>
+        <button class="controls__button controls__button--delete" data-action="delete">Delete</button>
+      </section>
+      <section class="controls__sort">
+        <h4 class="controls__label">Sort:</h4>
+        <button class="controls__button controls__button--sortAll controls__button--active" data-action="all">All</button>
+        <button class="controls__button controls__button--sortActive" data-action="active">Active</button>
+        <button class="controls__button controls__button--sortComplited" data-action="completed">Completed</button>
+      </section>
+    </section>
+
+  </main>
+
+  <footer class="page-footer page-footer--close">
+    <button class="page-footer__button"><span class="visually-hidden">Закрыть контакты</span>X</button>
+    <ul class="page-footer__contacts contacts">
+      <li class="contacts__item">
+        <a class="contacts__link contacts__link--github" href="https://github.com/My420"><span class="visually-hidden">Github</span></a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link contacts__link--mail" href="mailto:klinovitsky.aleksey@gmail.com"><span class="visually-hidden">Почта</span></a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link contacts__link--skype" href="skype:live:klinovitsky.aleksey?chat"><span class="visually-hidden">Skype</span></a>
+      </li>
+    </ul>
+  </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

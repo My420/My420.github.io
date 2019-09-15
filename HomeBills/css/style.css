@@ -1,0 +1,252 @@
+body {
+	min-width: 340px;
+	margin: 0px;
+	padding: 0px;
+	font-family: Trebuchet MS, Arial, sans-serif;
+	font-size: 16px;
+  	line-height: 24px;
+  	font-weight: 400;
+  	color: #283136;	  
+  	background-color: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+	width: 320px;
+	margin: 0 auto;
+}
+
+.main-page__title {
+	text-align: center;
+}
+
+.service {
+	padding: 10px;	
+	border: 2px solid #29abe2;
+}
+
+.service__controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+.service__switch {	
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-color: white;
+	border: 1px solid transparent;
+}
+
+.service__switch--gas {
+	background-image: url("../img/gas.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 75px 75px;
+}
+
+.service__switch--electricity {
+	background-image: url("../img/electricity.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.service__switch--water {
+	background-image: url("../img/water.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.service__name {	
+	display: none;	
+}
+
+.service__name--total {
+	display: block;	
+}
+
+.service__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-top: -2px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border: 1px solid #29abe2;
+	-webkit-box-shadow: 0 2px 4px 1px #29abe2;
+	        box-shadow: 0 2px 4px 1px #29abe2;	
+}
+
+.service__form:after {
+	content:"текущий";
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: 110px;
+}
+
+.service__form:before {
+	content:"прошлый";
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: 205px;
+}
+
+.service__form--electricity:after {
+	left: 114px;
+}
+
+.service__form--electricity:before {
+	left: 211px;
+}
+
+.service__text {
+	display: inline-block;
+	width: 80px;
+	margin-left: 10px;
+
+}
+.service__text--electricity {	
+	width: 100%;
+	text-align: center;
+}
+
+.service__indication {
+	width: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	font-family: Trebuchet MS, Arial, sans-serif;
+	font-size: 16px;
+  	line-height: 24px;
+  	font-weight: 400;
+  	text-align: center;
+  	color: #283136;
+  	border: 1px solid #283136;	  
+  	background-color: #ffffff;
+}
+
+.service__indication:disabled {
+	background-color: #cbe8f9;
+	border-color: #cbe8f9;
+}
+
+.service__indication--tarif {
+	width: 165px;
+}
+
+.service__button {
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: Trebuchet MS, Arial, sans-serif;
+	font-size: 16px;
+  	line-height: 24px;
+  	font-weight: 400;
+  	color: #283136;  
+  	background-color: #29abe2;
+  	border: none;
+  	-webkit-box-shadow: 0 -2px 4px 1px #29abe2;
+  	        box-shadow: 0 -2px 4px 1px #29abe2;
+}
+
+.service__button:active,
+.service__button:hover {
+	background-color: #0589c1;
+}
+
+.service__button--short {
+	width: 40%;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;	
+}
+
+.wrapper__amount {
+	order: 1;
+}
+
+.wrapper__total {
+	order: 2;
+}
+
+.wrapper__tarif {
+	order: 3;
+}
+
+
+#radio-water:checked ~ .service .service__switch--water,
+#radio-electricity:checked ~ .service .service__switch--electricity,
+#radio-gas:checked ~ .service .service__switch--gas {
+	position: relative;
+	z-index: 2;	
+	-webkit-box-shadow: 0 -2px 4px 1px #29abe2;	
+	        box-shadow: 0 -2px 4px 1px #29abe2;
+}
+
+#radio-water:checked ~ .service .service__name--water,
+#radio-electricity:checked ~ .service .service__name--electricity,
+#radio-gas:checked ~ .service .service__name--gas {
+	display: block;
+
+}
+
+.blink {
+	-webkit-animation-name: blink;
+	        animation-name: blink;
+	-webkit-animation-duration: 1000ms;
+	        animation-duration: 1000ms;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+	        animation-direction: normal;
+}
+
+@-webkit-keyframes blink {
+	0% {-webkit-box-shadow: 0 0 0 0 #29abe2;box-shadow: 0 0 0 0 #29abe2;}
+	100% {-webkit-box-shadow: 0 0 10px 4px #29abe2;box-shadow: 0 0 10px 4px #29abe2;}
+}
+
+@keyframes blink {
+	0% {-webkit-box-shadow: 0 0 0 0 #29abe2;box-shadow: 0 0 0 0 #29abe2;}
+	100% {-webkit-box-shadow: 0 0 10px 4px #29abe2;box-shadow: 0 0 10px 4px #29abe2;}
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+	<html lang="ru">
+  		<head>
+    		<meta charset="utf-8">
+    		<title>HomeBills</title>
+    		<meta name="description" content="Расчет стоимости услуг потребления, на основе показаний счетчика">
+   			<meta name="keywords" content="расчет тарифов, расчет стоимости тарифов, расчет коммунальных услуг">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    			    
+		    <link rel="stylesheet" type="text/css" href="css/style-min.css">		       
+  		</head>
+		  <body class="main-page">
+        <div class="container">
+          <h1 class="main-page__title visually-hidden">HomeBills</h1>
+          <input id="radio-water" class="visually-hidden" type="radio" name="slider" checked>
+          <input id="radio-electricity" class="visually-hidden" type="radio" name="slider">
+          <input id="radio-gas" class="visually-hidden" type="radio" name="slider">
+
+          <section class="service">
+              <h2 class="service__title visually-hidden">Калькулятор услуг</h2>
+              <div class="service__controls">
+                <label class="service__switch service__switch--water" for="radio-water"><span class="visually-hidden">Вода</span></label>
+                <label class="service__switch service__switch--electricity" for="radio-electricity"><span class="visually-hidden">Электричество</span></label>
+                <label class="service__switch service__switch--gas" for="radio-gas"><span class="visually-hidden">Газ</span></label>
+              </div>
+              <section class="service__name service__name--water">
+                <h2 class="service__title visually-hidden">Вода</h2>
+                <form class="service__form">
+                  <label class="service__text" for="waterKitchen">Кухня</label>
+                  <input class="service__indication" id="waterKitchen" type="number" value="0">
+                  <input class="service__indication" id="waterKitchenPrev" type="number" value="0">
+                  <label class="service__text" for="waterBath">Ванна</label>
+                  <input class="service__indication" id="waterBath" type="number" value="0">
+                  <input class="service__indication" id="waterBathPrev" type="number" value="0">
+                  <label class="service__text" for="waterTarif">Тариф</label>
+                  <input class="service__indication service__indication--tarif" id="waterTarif" type="text" value="64.96">
+                  <label class="service__text" for="waterCost">Итог</label>
+                  <input class="service__indication" id="waterCost" type="text" value="0" disabled>
+                  <input class="service__indication" id="waterCostPrev" type="text" value="0" disabled>
+                  <button class="service__button" id="buttonWater"><span class="service__button-text">Посчитать</span></button>                    
+                </form>              
+              </section>
+
+              <section class="service__name service__name--electricity">
+                <h2 class="service__title visually-hidden">Электричество</h2>
+                <form class="service__form service__form--electricity">
+                  <div class="service__form-wrapper wrapper">
+                    <div class="wrapper__amount">              
+                      <label class="service__text" for="electricity">Показания</label>
+                      <input class="service__indication" id="electricity" type="number" value="0">
+                      <input class="service__indication" id="electricityPrev" type="number" value="0">
+                    </div>
+                    <div class="wrapper__tarif">
+                      <label class="service__text service__text--electricity">Тариф</label>
+                      <input class="service__indication service__screen" id="electrNumber1" type="text" value="0" placeholder="auto" disabled>
+                      <input class="service__indication service__screen" id="electrTarif1" type="text" value="2.43" placeholder="auto" disabled>
+                      <input class="service__indication service__screen" id="electrCost1" type="text" value="0" placeholder="auto" disabled>
+                      <input class="service__indication service__screen" id="electrNumber2" type="text" value="0" placeholder="auto" disabled>
+                      <input class="service__indication service__screen" id="electrTarif2" type="text" value="3.04" placeholder="auto" disabled>
+                      <input class="service__indication service__screen" id="electrCost2" type="text" value="0" placeholder="auto" disabled>
+                      <input class="service__indication service__screen" id="electrNumber3" type="text" value="0" placeholder="auto" disabled>
+                      <input class="service__indication service__screen" id="electrTarif3" type="text" value="4.95" placeholder="auto" disabled>
+                      <input class="service__indication service__screen" id="electrCost3" type="text" value="0" placeholder="auto" disabled>
+                    </div>
+                    <div class="wrapper__total">
+                      <label class="service__text" for="waterCost">Итог</label>
+                      <input class="service__indication" id="electricityCost" type="text" value="0" disabled>
+                      <input class="service__indication" id="electricityCostPrev" type="text" value="0" disabled>
+                    </div>
+                  </div>  
+                  <button class="service__button" id="buttonElectricity"><span class="service__button-text">Посчитать</span></button>                                
+                </form>              
+              </section>
+
+              <section class="service__name service__name--gas">
+                <h2 class="service__title visually-hidden">Газ</h2>
+                <form class="service__form">
+                  <label class="service__text" for="gas">Показания</label>
+                  <input class="service__indication" id="gas" type="number" value=0>
+                  <input class="service__indication" id="gasPrev" type="number" value=0>
+                  <label class="service__text" for="gasTarif">Тариф</label>
+                  <input class="service__indication service__indication--tarif" id="gasTarif" type="text" value="4.2017">
+                  <label class="service__text" for="waterCost">Итог</label>
+                  <input class="service__indication" id="gasCost" type="text" value="0" disabled>
+                  <input class="service__indication" id="gasCostPrev" type="text" value="0" disabled>
+                  <button class="service__button" id="buttonGas"><span class="service__button-text">Посчитать</span></button>               
+                </form>              
+              </section> 
+              <section class="service__name service__name--total">
+                <h2 class="visually-hidden">Общая стоимость услуг</h2>
+                <label class="service__text" for="totalCost">Сумма</label>
+                <input class="service__indication" id="totalCost" type="text" value="0" disabled>
+                <input class="service__indication" id="totalCostPrev" type="text" value="0" disabled>
+                <button class="service__button service__button--short" id="buttonSumm"><span class="service__button-text">Посчитать</span></button>
+                <button class="service__button service__button--short" id="buttonSave"><span class="service__button-text">Сохранить</span></button>             
+              </section>           
+          </section>
+        </div>
+        <script src="js/main-min.js"></script>
+      </body>
+  </html>
