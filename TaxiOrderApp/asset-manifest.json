@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/TaxiOrderApp/static/css/main.2e4b81b2.chunk.css",
+    "main.js": "/TaxiOrderApp/static/js/main.aeb2a568.chunk.js",
+    "main.js.map": "/TaxiOrderApp/static/js/main.aeb2a568.chunk.js.map",
+    "runtime-main.js": "/TaxiOrderApp/static/js/runtime-main.b58bde0e.js",
+    "runtime-main.js.map": "/TaxiOrderApp/static/js/runtime-main.b58bde0e.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/TaxiOrderApp/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.aa58e3e5.chunk.js": "/TaxiOrderApp/static/js/2.aa58e3e5.chunk.js",
+    "static/js/2.aa58e3e5.chunk.js.map": "/TaxiOrderApp/static/js/2.aa58e3e5.chunk.js.map",
+    "index.html": "/TaxiOrderApp/index.html",
+    "precache-manifest.f8207e0bc094264cf52c7f8ea43ae272.js": "/TaxiOrderApp/precache-manifest.f8207e0bc094264cf52c7f8ea43ae272.js",
+    "service-worker.js": "/TaxiOrderApp/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/TaxiOrderApp/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.2e4b81b2.chunk.css.map": "/TaxiOrderApp/static/css/main.2e4b81b2.chunk.css.map",
+    "static/js/2.aa58e3e5.chunk.js.LICENSE.txt": "/TaxiOrderApp/static/js/2.aa58e3e5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b58bde0e.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.aa58e3e5.chunk.js",
+    "static/css/main.2e4b81b2.chunk.css",
+    "static/js/main.aeb2a568.chunk.js"
+  ]
+}
