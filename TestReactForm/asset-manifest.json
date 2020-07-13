@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TestReactForm/static/css/main.95603247.chunk.css",
+    "main.js": "/TestReactForm/static/js/main.6c17d5b2.chunk.js",
+    "main.js.map": "/TestReactForm/static/js/main.6c17d5b2.chunk.js.map",
+    "runtime-main.js": "/TestReactForm/static/js/runtime-main.7a4d21ef.js",
+    "runtime-main.js.map": "/TestReactForm/static/js/runtime-main.7a4d21ef.js.map",
+    "static/js/2.3b592bd4.chunk.js": "/TestReactForm/static/js/2.3b592bd4.chunk.js",
+    "static/js/2.3b592bd4.chunk.js.map": "/TestReactForm/static/js/2.3b592bd4.chunk.js.map",
+    "index.html": "/TestReactForm/index.html",
+    "precache-manifest.3285675039011dfb4cc0a87348689ecb.js": "/TestReactForm/precache-manifest.3285675039011dfb4cc0a87348689ecb.js",
+    "service-worker.js": "/TestReactForm/service-worker.js",
+    "static/css/main.95603247.chunk.css.map": "/TestReactForm/static/css/main.95603247.chunk.css.map",
+    "static/js/2.3b592bd4.chunk.js.LICENSE.txt": "/TestReactForm/static/js/2.3b592bd4.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/TestReactForm/static/media/SFCompactsemibold.e2eb3cc8.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a4d21ef.js",
+    "static/js/2.3b592bd4.chunk.js",
+    "static/css/main.95603247.chunk.css",
+    "static/js/main.6c17d5b2.chunk.js"
+  ]
+}
